@@ -4,113 +4,190 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gaurav Saini &amp; Associates | Advocates & Legal Consultants</title>
-<meta name="description" content="Gaurav Saini & Associates is a law firm providing civil, criminal, labour and advisory legal services in India.">
+<title>Gaurav Saini | Advocate &amp; Legal Consultant</title>
+<meta name="description" content="Gaurav Saini – Advocate &amp; Legal Consultant providing civil, criminal, labour and legal advisory services in India.">
 
 <style>
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: #1f2937;
-  background: #ffffff;
+html {
+  scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
 }
 
 /* HEADER */
 header {
-  background: #0b2239;
-  padding: 18px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background: #0f2a44;
+  text-align: center;
+  padding: 25px 15px;
 }
 
-.brand {
+.gold-text {
   color: #c9a24d;
-  font-size: 22px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
-nav a {
-  color: #ffffff;
-  margin-left: 28px;
+.logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+.nav {
+  margin-top: 15px;
+}
+
+.nav a {
+  display: inline-block;
+  margin: 6px 10px;
+  padding: 8px 16px;
+  border: 1px solid #c9a24d;
+  color: #c9a24d;
   font-size: 14px;
-  letter-spacing: 0.5px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-nav a:hover {
-  color: #c9a24d;
+.nav a:hover {
+  background: #c9a24d;
+  color: #0f2a44;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(rgba(11,34,57,0.85), rgba(11,34,57,0.85)),
-              url("images/hero-bg.jpg") center/cover no-repeat;
-  color: #ffffff;
-  padding: 120px 40px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 4px solid #c9a24d;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  margin: 25px auto;
+  display: block;
 }
 
 .hero h1 {
-  font-size: 42px;
-  max-width: 800px;
-  line-height: 1.3;
+  font-size: 32px;
+  color: #0f2a44;
 }
 
 .hero p {
   font-size: 18px;
-  max-width: 700px;
+  line-height: 1.6;
   margin-top: 15px;
-  color: #e5e7eb;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
-  padding: 70px 40px;
+  padding: 50px 20px;
 }
 
 .section h2 {
-  font-size: 30px;
-  color: #0b2239;
-  margin-bottom: 20px;
+  text-align: center;
+  color: #0f2a44;
+  margin-bottom: 25px;
 }
 
 .section p {
   max-width: 900px;
-  line-height: 1.8;
+  margin: auto;
   font-size: 17px;
+  line-height: 1.7;
+  text-align: center;
 }
 
 /* PRACTICE AREAS */
-.practice-grid {
+.services {
+  background: #f3f4f6;
+}
+
+.service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.practice-box {
-  border-left: 4px solid #c9a24d;
+.card {
+  background: #ffffff;
   padding: 20px;
-  background: #f9fafb;
-  font-weight: 500;
+  border-radius: 6px;
+  border-top: 4px solid #c9a24d;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: center;
+  font-weight: bold;
 }
 
-/* MAP */
+/* INTERNSHIP FORM */
+.form-box {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.form-box button {
+  width: 100%;
+  background: #0f2a44;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #c9a24d;
+  color: #0f2a44;
+}
+
+/* GOOGLE MAP */
 .map-box {
-  max-width: 1100px;
-  margin-top: 30px;
-  border: 3px solid #c9a24d;
+  max-width: 1000px;
+  margin: 25px auto;
+  border: 4px solid #c9a24d;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
 }
 
 /* FOOTER */
 footer {
-  background: #0b2239;
+  background: #0f2a44;
   color: #ffffff;
-  padding: 30px 40px;
+  text-align: center;
+  padding: 20px 10px;
   font-size: 14px;
 }
 
@@ -120,8 +197,8 @@ footer {
   bottom: 20px;
   right: 20px;
   background: #25D366;
-  color: #fff;
-  padding: 14px 18px;
+  color: #ffffff;
+  padding: 12px 16px;
   border-radius: 50%;
   font-size: 20px;
 }
@@ -132,62 +209,82 @@ footer {
 
 <!-- HEADER -->
 <header>
-  <div class="brand">Gaurav Saini &amp; Associates</div>
-  <nav>
-    <a href="#about">ABOUT</a>
-    <a href="#practice">PRACTICE AREAS</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
+  <img src="images/logo-compressed.webp" class="logo" alt="Gaurav Saini Logo" onerror="this.style.display='none'">
+  <h2 class="gold-text">Gaurav Saini</h2>
+  <p class="gold-text">Advocate &amp; Legal Consultant</p>
+
+  <div class="nav">
+    <a href="#about">About Us</a>
+    <a href="#practice">Practice Areas</a>
+    <a href="#internship">Internship</a>
+    <a href="#contact">Contact</a>
+    <a href="#location">Location</a>
+  </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Strategic Legal Solutions with Integrity and Professional Excellence</h1>
-  <p>
-    Gaurav Saini & Associates is a law firm providing comprehensive legal services
-    across civil, criminal, labour, and advisory matters.
-  </p>
+  <img src="images/gaurav-compressed.jpg" class="profile-pic" alt="Advocate Gaurav Saini" onerror="this.style.display='none'">
+  <h1>Trusted Legal Solutions</h1>
+  <p>Professional legal services with integrity, clarity, and commitment.</p>
 </section>
 
 <!-- ABOUT -->
 <section class="section" id="about">
-  <h2>About the Firm</h2>
+  <h2>About Us</h2>
   <p>
-    Gaurav Saini & Associates is committed to delivering practical, ethical, and
-    result-oriented legal solutions. The firm represents individuals and
-    organizations before courts, tribunals, and authorities across India.
+    Gaurav Saini &amp; Associates provides ethical, professional, and client-focused
+    legal services with a strong commitment to justice and integrity.
   </p>
 </section>
 
 <!-- PRACTICE AREAS -->
-<section class="section" id="practice">
+<section class="section services" id="practice">
   <h2>Practice Areas</h2>
+  <div class="service-grid">
+    <div class="card">Civil &amp; Criminal Law</div>
+    <div class="card">Labour &amp; Service Law</div>
+    <div class="card">Legal Consultation</div>
+  </div>
+</section>
 
-  <div class="practice-grid">
-    <div class="practice-box">Civil & Commercial Litigation</div>
-    <div class="practice-box">Criminal Law & White Collar Crime</div>
-    <div class="practice-box">Labour & Employment Law</div>
-    <div class="practice-box">Service & Administrative Law</div>
-    <div class="practice-box">Legal Advisory & Compliance</div>
+<!-- INTERNSHIP -->
+<section class="section" id="internship">
+  <h2>Internship Application</h2>
+  <p>Law students may apply using the form below.</p>
+
+  <div class="form-box">
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="College / University" required>
+      <textarea rows="4" placeholder="Why do you want this internship?" required></textarea>
+      <button type="submit">Apply for Internship</button>
+    </form>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section" id="contact">
   <h2>Contact</h2>
-  <p>
-    <strong>Phone:</strong> +91-9811273738<br>
-    <strong>Email:</strong> gaurav@sainilegal.in<br><br>
-    <strong>Address:</strong><br>
-    472-A, Gautam Nagar, New Delhi – 110049
-  </p>
+  <p>Phone: +91-9811273738</p>
+  <p>Email: gaurav@sainilegal.in</p>
+</section>
+
+<!-- LOCATION -->
+<section class="section" id="location">
+  <h2>Our Location</h2>
 
   <div class="map-box">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d219.01530908218461!2d77.2147812!3d28.5624065"
-      width="100%" height="350" style="border:0;" loading="lazy">
+      src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d219.01530908218461!2d77.2147812!3d28.5624065!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzQ0LjYiTiA3N8KwMTInNTMuNyJF!5e0!3m2!1sen!2sin!4v1767426118091!5m2!1sen!2sin"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
+
+  <p><strong>472-A, Gautam Nagar, New Delhi – 110049</strong></p>
 </section>
 
 <footer>
