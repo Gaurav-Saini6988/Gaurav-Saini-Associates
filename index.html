@@ -19,27 +19,35 @@ body {
   color: #1f2937;
 }
 
-/* HEADER */
+/* HEADER – LEFT LOGO */
 header {
   background: #0f2a44;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  max-width: 170px;
+  height: auto;
+}
+
+/* CENTER CONTENT */
+.header-center {
+  flex: 1;
   text-align: center;
-  padding: 25px 15px;
 }
 
 .gold-text {
   color: #c9a24d;
   font-weight: bold;
-}
-
-.logo {
-  width: 160px;
-  height: auto;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 /* NAVIGATION */
 .nav {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .nav a {
@@ -51,7 +59,7 @@ header {
   font-size: 14px;
   font-weight: bold;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .nav a:hover {
@@ -209,22 +217,27 @@ footer {
 
 <!-- HEADER -->
 <header>
-  <img src="images/logo-compressed.webp" class="logo" alt="Gaurav Saini Logo" onerror="this.style.display='none'">
-  <h2 class="gold-text">Gaurav Saini</h2>
-  <p class="gold-text">Advocate &amp; Legal Consultant</p>
+  <!-- LEFT LOGO -->
+  <img src="/images/logo.png" class="logo" alt="Gaurav Saini &amp; Associates Logo">
 
-  <div class="nav">
-    <a href="#about">About Us</a>
-    <a href="#practice">Practice Areas</a>
-    <a href="#internship">Internship</a>
-    <a href="#contact">Contact</a>
-    <a href="#location">Location</a>
+  <!-- CENTER TEXT + NAV -->
+  <div class="header-center">
+    <h2 class="gold-text">Gaurav Saini</h2>
+    <p class="gold-text">Advocate &amp; Legal Consultant</p>
+
+    <div class="nav">
+      <a href="#about">About Us</a>
+      <a href="#practice">Practice Areas</a>
+      <a href="#internship">Internship</a>
+      <a href="#contact">Contact</a>
+      <a href="#location">Location</a>
+    </div>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <img src="images/gaurav-compressed.jpg" class="profile-pic" alt="Advocate Gaurav Saini" onerror="this.style.display='none'">
+  <img src="/images/gaurav-compressed.jpg" class="profile-pic" alt="Advocate Gaurav Saini">
   <h1>Trusted Legal Solutions</h1>
   <p>Professional legal services with integrity, clarity, and commitment.</p>
 </section>
@@ -277,8 +290,7 @@ footer {
 
   <div class="map-box">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d219.01530908218461!2d77.2147812!3d28.5624065!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzQ0LjYiTiA3N8KwMTInNTMuNyJF!5e0!3m2!1sen!2sin!4v1767426118091!5m2!1sen!2sin"
-      allowfullscreen
+      src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d219.01530908218461!2d77.2147812!3d28.5624065"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
