@@ -27,7 +27,6 @@ header {
 
 .logo {
   max-width: 360px;
-  height: auto;
 }
 
 .header-center {
@@ -71,10 +70,8 @@ header {
 .profile-pic {
   width: 200px;
   height: 200px;
-  object-fit: contain;
   border-radius: 50%;
   border: 4px solid #c9a24d;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   margin: 25px auto;
   display: block;
 }
@@ -87,7 +84,6 @@ header {
 .hero p {
   font-size: 18px;
   line-height: 1.6;
-  margin-top: 15px;
 }
 
 /* ================= SECTIONS ================= */
@@ -116,7 +112,7 @@ header {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
   max-width: 1000px;
   margin: auto;
@@ -124,62 +120,13 @@ header {
 
 .card {
   background: #ffffff;
-  padding: 20px;
+  padding: 22px;
   border-radius: 6px;
   border-top: 4px solid #c9a24d;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   text-align: center;
   font-weight: bold;
-}
-
-/* ================= FORM ================= */
-.form-box {
-  max-width: 500px;
-  margin: 30px auto;
-  background: #f9fafb;
-  padding: 25px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.form-box input,
-.form-box textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.form-box button {
-  width: 100%;
-  background: #0f2a44;
-  color: #ffffff;
-  padding: 12px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.form-box button:hover {
-  background: #c9a24d;
-  color: #0f2a44;
-}
-
-/* ================= MAP ================= */
-.map-box {
-  max-width: 1000px;
-  margin: 25px auto;
-  border: 4px solid #c9a24d;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.map-box iframe {
-  width: 100%;
-  height: 350px;
-  border: 0;
+  line-height: 1.6;
 }
 
 /* ================= FOOTER ================= */
@@ -188,18 +135,6 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 20px;
-}
-
-/* ================= WHATSAPP ================= */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: #ffffff;
-  padding: 12px 16px;
-  border-radius: 50%;
-  font-size: 20px;
 }
 </style>
 </head>
@@ -217,9 +152,7 @@ footer {
       <a href="#about">About Us</a>
       <a href="#why-choose-us">Why Choose Us</a>
       <a href="#practice">Practice Areas</a>
-      <a href="#internship">Internship</a>
       <a href="#contact">Contact</a>
-      <a href="#location">Location</a>
     </div>
   </div>
 </header>
@@ -230,44 +163,58 @@ footer {
   <p>Professional legal services with integrity, clarity, and commitment.</p>
 </section>
 
+<!-- ================= ABOUT US ================= -->
 <section class="section" id="about">
   <h2>About Us</h2>
-  <p><strong>Gaurav Saini & Associates</strong> is a professional law firm providing ethical, result-oriented and client-focused legal services.</p>
-  <p>Led by <strong>Gaurav Saini, Advocate & Legal Consultant</strong>, the firm handles civil, criminal, labour and advisory matters with strategic planning and strong legal research.</p>
-  <p>Transparency, client confidence and professional integrity remain the foundation of our legal practice.</p>
+
+  <p>
+    <strong>Gaurav Saini &amp; Associates</strong> is a full-service law firm committed
+    to providing ethical, result-oriented, and client-focused legal services.
+    Founded on the principles of integrity, professionalism, and accountability,
+    the firm aims to deliver practical legal solutions tailored to the specific
+    needs of individuals, businesses, and institutions.
+  </p>
+
+  <p>
+    Led by <strong>Gaurav Saini, Advocate &amp; Legal Consultant</strong>, the firm
+    advises and represents clients across civil disputes, criminal cases, labour
+    and employment issues, corporate advisory, drafting and vetting of legal
+    documents, and regulatory compliance.
+  </p>
+
+  <p>
+    Client confidence and transparency are paramount. The firm believes in clear
+    communication, timely advice, and ethical representation at every stage of
+    the legal process.
+  </p>
 </section>
 
+<!-- ================= WHY CHOOSE US ================= -->
 <section class="section services" id="why-choose-us">
   <h2>Why Choose Us</h2>
+
+  <p>
+    At <strong>Gaurav Saini &amp; Associates</strong>, we understand that legal
+    matters require clarity, dedication, and trust.
+  </p>
+
   <div class="service-grid">
     <div class="card">Ethical & Transparent Practice</div>
-    <div class="card">Client-Focused Approach</div>
-    <div class="card">Strong Legal Research</div>
-    <div class="card">Multi-Practice Experience</div>
-    <div class="card">Practical Legal Advice</div>
-    <div class="card">Professional Court Representation</div>
+    <div class="card">Client-Centric Approach</div>
+    <div class="card">Strong Legal Research & Strategy</div>
+    <div class="card">Wide Practice Experience</div>
+    <div class="card">Timely & Practical Advice</div>
+    <div class="card">Professional Representation</div>
   </div>
 </section>
 
+<!-- ================= PRACTICE AREAS ================= -->
 <section class="section services" id="practice">
   <h2>Practice Areas</h2>
   <div class="service-grid">
     <div class="card">Civil & Criminal Law</div>
     <div class="card">Labour & Service Law</div>
-    <div class="card">Legal Consultation</div>
-  </div>
-</section>
-
-<section class="section" id="internship">
-  <h2>Internship Application</h2>
-  <div class="form-box">
-    <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="text" placeholder="College / University" required>
-      <textarea rows="4" placeholder="Why do you want this internship?" required></textarea>
-      <button type="submit">Apply for Internship</button>
-    </form>
+    <div class="card">Legal Advisory</div>
   </div>
 </section>
 
@@ -277,19 +224,9 @@ footer {
   <p>Email: gaurav@sainilegal.in</p>
 </section>
 
-<section class="section" id="location">
-  <h2>Our Location</h2>
-  <div class="map-box">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d219.01530908218461!2d77.2147812!3d28.5624065"></iframe>
-  </div>
-  <p><strong>472-A, Gautam Nagar, New Delhi – 110049</strong></p>
-</section>
-
 <footer>
   © 2026 Gaurav Saini & Associates. All Rights Reserved.
 </footer>
-
-<a href="https://wa.me/919811273738" class="whatsapp">💬</a>
 
 </body>
 </html>
