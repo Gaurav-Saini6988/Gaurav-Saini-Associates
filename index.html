@@ -25,14 +25,9 @@ header {
   align-items: center;
 }
 
-.logo {
-  max-width: 360px;
-}
+.logo { max-width: 360px; }
 
-.header-center {
-  flex: 1;
-  text-align: center;
-}
+.header-center { flex: 1; text-align: center; }
 
 .gold-text {
   color: #c9a24d;
@@ -53,8 +48,8 @@ header {
   font-size: 14px;
   font-weight: bold;
   border-radius: 4px;
-  transition: 0.3s;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .nav a:hover {
@@ -127,41 +122,18 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   text-align: center;
   font-weight: bold;
-  line-height: 1.6;
 }
 
-/* ================= PRACTICE TOGGLE ================= */
-.toggle-btn-box {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.toggle-btn {
-  background: #0f2a44;
-  color: #ffffff;
-  border: 2px solid #c9a24d;
-  padding: 12px 26px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.toggle-btn:hover {
-  background: #c9a24d;
-  color: #0f2a44;
-}
-
-.practice-slide {
+/* ================= SLIDE SECTIONS ================= */
+.slide-section {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.6s ease, opacity 0.4s ease;
 }
 
-.practice-slide.open {
-  max-height: 800px;
+.slide-section.open {
+  max-height: 900px;
   opacity: 1;
 }
 
@@ -186,8 +158,8 @@ footer {
 
     <div class="nav">
       <a href="#about">About Us</a>
-      <a href="#why-choose-us">Why Choose Us</a>
-      <a href="#practice" onclick="openPractice()">Practice Areas</a>
+      <a href="#why-choose-us" onclick="toggleWhy()">Why Choose Us</a>
+      <a href="#practice" onclick="togglePractice()">Practice Areas</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -201,14 +173,14 @@ footer {
 
 <section class="section" id="about">
   <h2>About Us</h2>
-  <p><strong>Gaurav Saini & Associates</strong> is a full-service law firm committed to ethical and client-focused legal services.</p>
-  <p>Led by <strong>Gaurav Saini, Advocate & Legal Consultant</strong>, the firm handles civil, criminal, labour and advisory matters.</p>
+  <p><strong>Gaurav Saini &amp; Associates</strong> is a full-service law firm committed to ethical and client-focused legal services.</p>
+  <p>Led by <strong>Gaurav Saini, Advocate &amp; Legal Consultant</strong>, the firm handles civil, criminal, labour and advisory matters.</p>
   <p>Transparency, professionalism and client confidence are the foundation of our practice.</p>
 </section>
 
-<section class="section services" id="why-choose-us">
+<!-- WHY CHOOSE US (HIDDEN) -->
+<section class="section services slide-section" id="why-choose-us">
   <h2>Why Choose Us</h2>
-  <p>We believe legal matters require trust, clarity and dedication.</p>
   <div class="service-grid">
     <div class="card">Ethical & Transparent Practice</div>
     <div class="card">Client-Centric Approach</div>
@@ -219,19 +191,13 @@ footer {
   </div>
 </section>
 
-<section class="section services" id="practice">
+<!-- PRACTICE AREAS (HIDDEN) -->
+<section class="section services slide-section" id="practice">
   <h2>Practice Areas</h2>
-
-  <div class="toggle-btn-box">
-    <button class="toggle-btn" onclick="togglePractice()">View Practice Areas</button>
-  </div>
-
-  <div id="practice-content" class="practice-slide">
-    <div class="service-grid">
-      <div class="card">Civil & Criminal Law</div>
-      <div class="card">Labour & Service Law</div>
-      <div class="card">Legal Advisory & Consultation</div>
-    </div>
+  <div class="service-grid">
+    <div class="card">Civil & Criminal Law</div>
+    <div class="card">Labour & Service Law</div>
+    <div class="card">Legal Advisory & Consultation</div>
   </div>
 </section>
 
@@ -246,27 +212,14 @@ footer {
 </footer>
 
 <script>
-function togglePractice() {
-  const content = document.getElementById("practice-content");
-  const button = document.querySelector(".toggle-btn");
-
-  if (content.classList.contains("open")) {
-    content.classList.remove("open");
-    button.innerText = "View Practice Areas";
-  } else {
-    content.classList.add("open");
-    button.innerText = "Hide Practice Areas";
-  }
+function toggleWhy() {
+  const sec = document.getElementById("why-choose-us");
+  sec.classList.toggle("open");
 }
 
-function openPractice() {
-  const content = document.getElementById("practice-content");
-  const button = document.querySelector(".toggle-btn");
-
-  if (!content.classList.contains("open")) {
-    content.classList.add("open");
-    button.innerText = "Hide Practice Areas";
-  }
+function togglePractice() {
+  const sec = document.getElementById("practice");
+  sec.classList.toggle("open");
 }
 </script>
 
