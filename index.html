@@ -54,7 +54,7 @@ header {
 
 .nav a {
   display: inline-block;
-  margin: 6px 6px;
+  margin: 6px;
   padding: 8px 14px;
   border: 1px solid #c9a24d;
   color: #c9a24d;
@@ -72,24 +72,34 @@ header {
 
 /* ================= HERO ================= */
 .hero {
-  padding: 40px 20px;
+  padding: 45px 20px;
   text-align: center;
 }
 
-/* 🔒 PROFILE PIC – FIXED SIZE (NO SHRINKING) */
-.profile-pic {
-  width: 200px;
-  height: 200px;
+/* 🌟 PREMIUM PROFILE IMAGE SETUP */
+.profile-wrapper {
+  display: inline-block;
+  padding: 6px;
   border-radius: 50%;
-  border: 4px solid #c9a24d;
+  background: linear-gradient(135deg, #c9a24d, #f0d68c);
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
   object-fit: cover;
-  margin: 25px auto;
+  object-position: 50% 15%; /* FACE SAFE POSITION */
+  background: #ffffff;
   display: block;
+  box-shadow: 0 8px 20px rgba(15, 42, 68, 0.25);
 }
 
 .hero h1 {
   font-size: 32px;
   color: #0f2a44;
+  margin-top: 10px;
 }
 
 .hero p {
@@ -139,7 +149,7 @@ header {
   font-weight: bold;
 }
 
-/* ================= SLIDE SECTIONS ================= */
+/* ================= SLIDE ================= */
 .slide {
   max-height: 0;
   overflow: hidden;
@@ -220,40 +230,18 @@ footer {
 </header>
 
 <section class="hero">
-  <img src="/images/gaurav-compressed.jpg" class="profile-pic" alt="Advocate Gaurav Saini">
+  <div class="profile-wrapper">
+    <img src="/images/gaurav-compressed.jpg" class="profile-pic" alt="Advocate Gaurav Saini">
+  </div>
+
   <h1>Trusted Legal Solutions</h1>
   <p>Professional legal services with integrity, clarity, and commitment.</p>
 </section>
 
-<!-- ✅ EXPANDED ABOUT US -->
 <section class="section" id="about">
   <h2>About Us</h2>
-
-  <p>
-    <strong>Gaurav Saini &amp; Associates</strong> is a full-service law firm founded on the
-    principles of integrity, professionalism, and client-focused legal solutions.
-    We are committed to providing clear, practical, and result-oriented legal advice.
-  </p>
-
-  <p>
-    The firm is led by <strong>Gaurav Saini, Advocate &amp; Legal Consultant</strong>,
-    who brings extensive experience in handling complex legal matters with a strategic
-    and solution-driven approach.
-  </p>
-
-  <p>
-    Our practice covers <strong>civil and criminal litigation, labour and employment laws,
-    legal advisory, contracts, and regulatory matters</strong>.
-    We represent individuals, businesses, and institutions before courts, tribunals,
-    and authorities across India.
-  </p>
-
-  <p>
-    At Gaurav Saini &amp; Associates, we believe effective legal representation is built on
-    trust, transparency, and long-term professional relationships.
-    Our objective is not only to resolve disputes, but to safeguard our clients’ legal interests
-    with honesty and dedication.
-  </p>
+  <p><strong>Gaurav Saini &amp; Associates</strong> is a full-service law firm committed to ethical, professional, and client-focused legal services.</p>
+  <p>Led by <strong>Gaurav Saini, Advocate &amp; Legal Consultant</strong>, the firm advises and represents clients across civil, criminal, labour, and advisory matters.</p>
 </section>
 
 <section class="section services slide" id="why">
